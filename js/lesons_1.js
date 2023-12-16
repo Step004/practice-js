@@ -48,13 +48,30 @@
 // ЗАДАЧА 5
 // НАПИШІТЬ ПРОГРАМУ , ДЕ МИ У КОРИСТОВАЧА ПИТАЄМОСЬ МІСЯЦЬ НАРОДЖЕННЯ, І ПОКАЗУЄМО У ЯКУ ПОРУ РОКУ ВІН НАРОДИВСЯ
 
-let month = Number(prompt("Введіть місяць вашого народження"));
-if (month === 1 || month === 12 || month === 2) {
-    alert("Ви народились взимку");
-} else if (month >= 3 && month <= 5) {
-    alert("Ви народились весною");
-} else if (month >= 6 && month <= 8) {
-    alert("Ви народились влітку");
-} else if (month >= 9 && month <= 11) {
-    alert("Ви народились восени");
-} else { alert("Дані введено не віроно") };
+//let month = Number(prompt("Введіть місяць вашого народження"));
+//if (month === 1 || month === 12 || month === 2) {
+ //   alert("Ви народились взимку");
+//} else if (month >= 3 && month <= 5) {
+  //  alert("Ви народились весною");
+//} else if (month >= 6 && month <= 8) {
+  //  alert("Ви народились влітку");
+//} else if (month >= 9 && month <= 11) {
+    //alert("Ви народились восени");
+//} else { alert("Дані введено не віроно") };
+
+
+//ЗАДАЧА 6
+//НАПИШІТЬ ПРОГРАМУ, ЯКА ПРОВІРЯЄ ЛОГІН І ПАРОЛЬ, І ВИВОДИТЬ ПРИВІТАННЯ - ЯКЩО ВСЕ ДОБРЕ, АБО ВИДАЄ ПОМИЛКУ , ЩО НЕ ВІРНИЙ ЛОГІН
+
+//const login = "kkk";
+//const password = "lll";
+let userLogin = prompt('введіть свій логін');
+let userPassword = prompt('введіть свій пароль');
+
+//if (login == userLogin && password == userPassword) {
+    alert('Вітаємо')
+//} else {
+    alert('Помилка')
+//}
+const message = login == userLogin && password == userPassword ? "Вітаємо" : "Помилка";
+console.log(message);
