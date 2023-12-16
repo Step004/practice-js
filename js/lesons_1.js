@@ -65,13 +65,39 @@
 
 //const login = "kkk";
 //const password = "lll";
-let userLogin = prompt('введіть свій логін');
-let userPassword = prompt('введіть свій пароль');
+// let userLogin = prompt('введіть свій логін');
+// let userPassword = prompt('введіть свій пароль');
 
-//if (login == userLogin && password == userPassword) {
-    alert('Вітаємо')
-//} else {
-    alert('Помилка')
-//}
-const message = login == userLogin && password == userPassword ? "Вітаємо" : "Помилка";
-console.log(message);
+// //if (login == userLogin && password == userPassword) {
+//     alert('Вітаємо')
+// //} else {
+//     alert('Помилка')
+// //}
+// const message = login == userLogin && password == userPassword ? "Вітаємо" : "Помилка";
+// console.log(message);
+
+// ЗАДАЧА 7
+// НАПИШІТЬ ПРОГРАМУ , ЯКА БУДЕ ЗАПИТУВАТИ У КОРИСТУВАЧА ПЕРІОД ПІДПИСКИ НА СЕРВІС ТА ПОКАЗУВАТИМЕ ЦІНУ ПІДПИСКИ( SWITCH)
+// ЯКЩО ДЕНЬ - ціна 1.99
+// ЯУЩО НЕДІЛЯ - ціна 5.99
+// ЯКЩО МІСЯЦЬ - ціна 10.99
+// ЯКЩО РІК - ціна 100.99
+
+// let price = prompt("Введіть період підписки").toUpperCase();
+
+// switch (price) {
+//   case "ДЕНЬ": 
+//   console.log("Ціна 1.99")
+//   break;
+//   case "НЕДІЛЯ":
+//     console.log("Ціна 5.99")
+//     break;
+//     case "МІСЯЦЬ":
+//       console.log("Ціна 10.99")
+//       break;
+//       case "РІК":
+//         console.log("Ціна 100.99")
+//         break;
+//         default:
+//           console.log("Error");
+// }
