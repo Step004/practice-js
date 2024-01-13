@@ -63,93 +63,93 @@
 // const newstr = newString.split("").reverse().join("")
 // console.log(newString === newstr);
 
-const scientists = [
-    {
-      name: "Albert",
-      surname: "Einstein",
-      born: 1879,
-      dead: 1955,
-      id: 1,
-    },
-    {
-      name: "Isaac",
-      surname: "Newton",
-      born: 1643,
-      dead: 1727,
-      id: 2,
-    },
-    {
-      name: "Galileo",
-      surname: "Galilei",
-      born: 1564,
-      dead: 1642,
-      id: 3,
-    },
-    {
-      name: "Marie",
-      surname: "Curie",
-      born: 1867,
-      dead: 1934,
-      id: 4,
-    },
-    {
-      name: "Johannes",
-      surname: "Kepler",
-      born: 1571,
-      dead: 1630,
-      id: 5,
-    },
-    {
-      name: "Nicolaus",
-      surname: "Copernicus",
-      born: 1473,
-      dead: 1543,
-      id: 6,
-    },
-    {
-      name: "Max",
-      surname: "Planck",
-      born: 1858,
-      dead: 1947,
-      id: 7,
-    },
-    {
-      name: "Katherine",
-      surname: "Blodgett",
-      born: 1898,
-      dead: 1979,
-      id: 8,
-    },
-    {
-      name: "Ada",
-      surname: "Lovelace",
-      born: 1815,
-      dead: 1852,
-      id: 9,
-    },
+// const scientists = [
+//     {
+//       name: "Albert",
+//       surname: "Einstein",
+//       born: 1879,
+//       dead: 1955,
+//       id: 1,
+//     },
+//     {
+//       name: "Isaac",
+//       surname: "Newton",
+//       born: 1643,
+//       dead: 1727,
+//       id: 2,
+//     },
+//     {
+//       name: "Galileo",
+//       surname: "Galilei",
+//       born: 1564,
+//       dead: 1642,
+//       id: 3,
+//     },
+//     {
+//       name: "Marie",
+//       surname: "Curie",
+//       born: 1867,
+//       dead: 1934,
+//       id: 4,
+//     },
+//     {
+//       name: "Johannes",
+//       surname: "Kepler",
+//       born: 1571,
+//       dead: 1630,
+//       id: 5,
+//     },
+//     {
+//       name: "Nicolaus",
+//       surname: "Copernicus",
+//       born: 1473,
+//       dead: 1543,
+//       id: 6,
+//     },
+//     {
+//       name: "Max",
+//       surname: "Planck",
+//       born: 1858,
+//       dead: 1947,
+//       id: 7,
+//     },
+//     {
+//       name: "Katherine",
+//       surname: "Blodgett",
+//       born: 1898,
+//       dead: 1979,
+//       id: 8,
+//     },
+//     {
+//       name: "Ada",
+//       surname: "Lovelace",
+//       born: 1815,
+//       dead: 1852,
+//       id: 9,
+//     },
   
-    {
-      name: "Lise",
-      surname: "Meitner",
-      born: 1878,
-      dead: 1968,
-      id: 11,
-    },
-    {
-      name: "Sarah E.",
-      surname: "Goode",
-      born: 1855,
-      dead: 1905,
-      id: 10,
-    },
-    {
-      name: "Hanna",
-      surname: "Hammarström",
-      born: 1829,
-      dead: 1909,
-      id: 12,
-    },
-];
+//     {
+//       name: "Lise",
+//       surname: "Meitner",
+//       born: 1878,
+//       dead: 1968,
+//       id: 11,
+//     },
+//     {
+//       name: "Sarah E.",
+//       surname: "Goode",
+//       born: 1855,
+//       dead: 1905,
+//       id: 10,
+//     },
+//     {
+//       name: "Hanna",
+//       surname: "Hammarström",
+//       born: 1829,
+//       dead: 1909,
+//       id: 12,
+//     },
+// ];
 //   1)получити масив вчених які народились у 19ст;
 // const result = scientists.filter(scientist => scientist.born >= 1800 && scientist.born < 1900)
 //     .map(scientist => `${scientist.name} ${scientist.surname}`);
@@ -174,5 +174,59 @@ const scientists = [
 // console.log(a)
 //
 // 6)знайти рік народження Albert Einstein;
-const b = scientists.find(scientist => scientist.name === "Albert" && scientist.surname === "Einstein")
-console.log(b.born)
+// const b = scientists.find(scientist => scientist.name === "Albert" && scientist.surname === "Einstein")
+// console.log(b.born)
+
+// ЗАДАЧА 2
+// Напишіть дві функції:
+// makeProduct(name, price, callback) -приймає імя та ціну товару, а також колбек.Функція створює обєкт товару, добавляє йому унікальний ідентифікатор, в значення id і викликає колбек, передаючи йому створений обєкт.
+// showProduct(product) - колбек приймає обєкт продукта і логінує його в консоль;
+// makeProduct("Холодильник", 10000, showProduct);
+
+// function makeProduct(name, price, callback) {
+//     const product = { name, price, id: Date.now() }
+//     callback(product)
+// }
+// function showProduct(product) {
+//     console.log(product);
+// }
+
+// ЗАДАЧА 9
+// Напишіть функцію для роботи з колекцією навчаючих курсів courses:
+
+// addCourse(name) - добавляє курс у кінець колекції
+// removeCourse(name) - видаляє курс із колекції
+// updateCourse(oldName, newName)- змінює імя на нове
+// const courses = ["HTML", "CSS", "JavaScript", "React", "PostgreSQL"];
+
+// function addCourse(name) {
+//     if (courses.includes(name)) {
+//         console.log('У вас уже є такий курс')
+//     }
+//     else {
+//         courses.push(name)
+//     }
+// }
+
+// function removeCourse(name) {
+//     const index = courses.indexOf(name) 
+//     if (index === -1) {
+//         console.log('Курс з таким іменем не найдено')
+//     }
+//     else {
+//         courses.splice(index, 1)
+//     }
+// }
+
+// function updateCourse(oldName, newName) {
+//     const index = courses.indexOf(oldName)
+//     courses.splice(index, 1, newName)
+// }
+
+// addCourse("Express"); // ['HTML', 'CSS', 'JavaScript', 'React', 'PostgreSQL', 'Express']
+// addCourse("CSS"); // 'У вас уже є такий курс'
+// removeCourse("React"); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'Express']
+// removeCourse("Vue"); // 'Курс з таким іменем не найдено'
+// updateCourse("Express", "NestJS"); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL', 'NestJS']
+// console.log(courses);
+
