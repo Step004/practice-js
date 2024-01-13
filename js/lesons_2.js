@@ -156,6 +156,16 @@ const scientists = [
 // console.log(result);
 // 2)порахувати загальну суму років скільки прожили вчені , і визначити середнє значення;
 
-const result = scientists.reduce((acc, year) => acc + (year.dead - year.born), 0);
+// const result = scientists.reduce((acc, year) => acc + (year.dead - year.born), 0);
 
-console.log(result/scientists.length);
+// console.log(result/scientists.length);
+
+// 3)відсортувати по алфавіту;
+
+// const result = scientists.toSorted((a, b) => (a.name > b.name) ? 1 : -1)
+// console.log(result);
+
+// 4)відсортувати по кількості прожитих років;
+
+const result = scientists.toSorted((a, b) => (a.dead - a.born) - (b.dead - b.born))
+console.log(result);
