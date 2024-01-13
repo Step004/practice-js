@@ -49,9 +49,16 @@
 //     let smalnum = number[0];
 //     for (const a of number) {
 //         if (smalnum > a) {
-//             smalnum = a 
-//         } 
+//             smalnum = a
+//         }
             
 //     }
 //     return smalnum;
 //     }
+
+// ЗАДАЧА 4
+//  Провірте , чи являється рядок полідромом
+const str = "ротатор";//true
+const newString = "Hello";//false
+const newstr = newString.split("").reverse().join("")
+console.log(newString === newstr);
