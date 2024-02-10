@@ -1,5 +1,5 @@
 // Створіть карточки товару з масиву використовуючи createElement
-import car from "./data/cars.js";
+// import car from "./data/cars.js";
 
 // const list = document.querySelector(".js-goods");
 
@@ -17,7 +17,7 @@ import car from "./data/cars.js";
 // priceCar.textContent = price;
 // textDes.textContent = description;
 
-// listItem.append(text, picture, priceCar, textDes);
+// listItem. append(text, picture, priceCar, textDes);
 
 // return listItem;
 // }
